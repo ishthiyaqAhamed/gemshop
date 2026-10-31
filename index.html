@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blue Sapphire | Gem Shop</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Gem Shop</h1>
+      <nav>
+        <ul>
+          <li><a href="/shop">Shop</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Natural Blue Sapphire</h2>
+        <img src="sapphire.jpg" alt="Blue sapphire on a white cloth">
+        <p>Price: <strong>Rs. 150,000</strong></p>
+        <ul>
+          <li>Colour: Blue</li>
+          <li>Weight: 2.5 carat</li>
+          <input id="search" type="text">
+        </ul>
+      </section>
+
+      <section>
+        <h2>Ask about this gem</h2>
+        <form>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email">
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Contact: hello@gemshop.lk</p>
+    </footer>
+    <script>
+      document.getElementById("search").addEventListener("input", function (event) {
+  console.log(event.target.value);
+});
+    </script>
+  </body>
+</html>
